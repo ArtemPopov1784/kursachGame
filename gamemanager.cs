@@ -132,11 +132,13 @@ public class GameManager : MonoBehaviour
         }
         else Health -= count;
     }
+    // красивое 😊
     /// <summary>
     /// Функция, отображающая игровой экран при проигрыше
     /// </summary>
     public void GameOver()
     {
+        // отображение экрана поражения
         GameOverScreen.gameObject.SetActive(true);
     }
     /// <summary>
@@ -144,6 +146,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void WinGame()
     {
+        // отображение экрана победы
         WinningScreen.gameObject.SetActive(true);
     }
     /// <summary>
@@ -151,6 +154,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void RestartGame()
     {
+        // загрузка сцены заново
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     /// <summary>
@@ -168,6 +172,7 @@ public class GameManager : MonoBehaviour
     /// <returns>Урон равный значению из массива</returns>
     public int dmgChoice(int idDamag)
     {
+        // возвращает полученный урон
         return dmg[idDamag];
     }
 
